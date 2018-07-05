@@ -1,0 +1,29 @@
+//===================================================
+//Base Styles
+//===================================================
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,500');
+
+* {
+  font-family: $main-body-fonts;
+  color: $main-font-color;
+  font-size: 18px;
+  font-weight: 300;
+  outline: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 15px 0;
+}

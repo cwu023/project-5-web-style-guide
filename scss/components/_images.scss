@@ -1,0 +1,30 @@
+//===================================================
+//Image Styles
+//===================================================
+
+.img--logo, .img--frame, .img--avatar {
+  display: block;
+  margin: 40px auto;
+}
+
+.img--logo {
+  margin: 20px auto;
+
+  @include mq(large) {
+    margin-left: 0;
+  }
+}
+
+.img--frame {
+  border: 1px solid silver;
+  padding: 14px;
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
+}
+
+@include mq(large) {
+  .img--avatar {
+    margin: 40px auto;
+  }
+}

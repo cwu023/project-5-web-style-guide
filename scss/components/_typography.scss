@@ -1,0 +1,37 @@
+//===================================================
+//Typography Styles
+//===================================================
+
+.headline--secondary {
+  font-weight: 100;
+
+  @include mq(large) {
+    margin-top: 0;
+  }
+}
+
+.headline--primary {
+  padding-left: 30px;
+  color: $headline-primary-color;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.link {
+  color: $link-color;
+  display: inline;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: $link-hover-color;
+}
+
+.blockquote {
+  font-size: 25px;
+  border-left: 8px solid $blockquote-color;
+  margin-left: 20px;
+  padding-left: 15px;
+  font-style: italic;
+  margin-bottom: 50px;
+}

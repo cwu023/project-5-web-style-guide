@@ -1,0 +1,29 @@
+//===================================================
+//Mixins
+//===================================================
+
+  //Media Query
+  @mixin mq($break) {
+    @if $break == "large" {
+      @media(min-width: $break-l) {
+        @content;
+      }
+    }
+  }
+
+  //Flex box
+  @mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  @mixin flex-grow($int: 1) {
+    -webkit-box-flex: $int;
+    -moz-box-flex: $int;
+    -webkit-flex-grow: $int;
+    -ms-flex: $int;
+    flex-grow: $int;
+  }

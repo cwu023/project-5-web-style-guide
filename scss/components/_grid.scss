@@ -1,0 +1,93 @@
+//===================================================
+//Grid Styles
+//===================================================
+
+.container {
+  width: 85%;
+  margin: 30px auto;
+
+  @include mq(large) {
+    width: 80%;
+  }
+}
+
+.grid__row {
+  margin-bottom: 80px;
+
+  @include mq(large) {
+    @include flexbox;
+  }
+}
+
+.grid__row > .theme__colors {
+  color: $grid-font-color;
+  font-size: 14px;
+  margin: 8px 5px;
+  text-transform: lowercase;
+  padding-top: 15px;
+  height: 33px;
+}
+
+.grid__col--12.theme__colors {
+  background-color: $grid-col-12-color;
+
+  @include mq(large) {
+    @include flex-grow($int: 1);
+  }
+}
+
+.grid__col--6.theme__colors {
+  background-color: $grid-col-6-color;
+}
+
+.grid__col--4.theme__colors {
+  background-color: $grid-col-4-color;
+
+  @include mq(large) {
+    @include flex-grow($int: 3);
+  }
+}
+
+.grid__col--3.theme__colors {
+  background-color: $grid-col-3-color;
+}
+
+.grid__col--5.theme__colors {
+  background-color: $grid-col-5-color;
+
+  @include mq(large) {
+    @include flex-grow($int: 5);
+  }
+}
+
+.grid__col--7.theme__colors {
+  background-color: $grid-col-7-color;
+
+  @include mq(large) {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.grid__col--8.theme__colors {
+  background-color: $grid-col-8-color;
+
+  @include mq(large) {
+    @include flex-grow($int: 8);
+  }
+}
+
+@include mq(large) {
+  .grid__col--12 {
+    @include flexbox;
+    width: 100%;
+  }
+
+  .grid__col--6 {
+    @include flex-grow($int: 2);
+  }
+
+  .grid__col--3 {
+    @include flex-grow($int: 4);
+  }
+}
