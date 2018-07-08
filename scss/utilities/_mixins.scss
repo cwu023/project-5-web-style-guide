@@ -2,10 +2,16 @@
 //Mixins
 //===================================================
 
-  //Media Query
+  //Media Queries
   @mixin mq($break) {
-    @if $break == "large" {
-      @media(min-width: $break-l) {
+    @if $break == "medium" {
+      @media (min-width: $break-md) and (max-width: $break-ml) {
+        @content;
+      }
+    }
+
+    @else if $break == "large" {
+      @media (min-width: $break-lg) {
         @content;
       }
     }

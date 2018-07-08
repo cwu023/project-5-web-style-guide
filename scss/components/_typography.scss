@@ -5,8 +5,18 @@
 .headline--secondary {
   font-weight: 100;
 
+  @include mq(medium) {
+    margin-top: 0;
+  }
+
   @include mq(large) {
     margin-top: 0;
+  }
+}
+
+@include mq(medium) {
+  .card {
+    width: 90%;
   }
 }
 

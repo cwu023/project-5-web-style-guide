@@ -341,19 +341,43 @@ template {
 
 .btn--default {
   background-color: #51DDFC; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .btn--default {
+      width: 85px;
+      margin-left: 40px; } }
 
 .btn--success {
   background-color: #63CC82; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .btn--success {
+      width: 85px;
+      margin-left: 40px; } }
 
 .btn--error {
   background-color: #E4757A; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .btn--error {
+      width: 85px;
+      margin-left: 40px; } }
 
 .btn--warning {
   background-color: #FD7755; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .btn--warning {
+      width: 85px;
+      margin-left: 40px; } }
 
 .btn--info {
   background-color: #927BC1; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .btn--info {
+      width: 85px;
+      margin-left: 40px; } }
 
+@media (min-width: 769px) and (max-width: 1399px) {
+  .form button {
+    width: 100%;
+    margin-left: 5px; } }
 @media (min-width: 1400px) {
   form .btn--default {
     width: 100%;
@@ -390,6 +414,13 @@ template {
 
 .grid__row {
   margin-bottom: 80px; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .grid__row {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
   @media (min-width: 1400px) {
     .grid__row {
       display: -webkit-box;
@@ -408,6 +439,13 @@ template {
 
 .grid__col--12.theme__colors {
   background-color: #80E8D1; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .grid__col--12.theme__colors {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
   @media (min-width: 1400px) {
     .grid__col--12.theme__colors {
       -webkit-box-flex: 1;
@@ -421,6 +459,9 @@ template {
 
 .grid__col--4.theme__colors {
   background-color: #7DE6FD; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .grid__col--4.theme__colors {
+      width: 40%; } }
   @media (min-width: 1400px) {
     .grid__col--4.theme__colors {
       -webkit-box-flex: 3;
@@ -434,6 +475,9 @@ template {
 
 .grid__col--5.theme__colors {
   background-color: #88D9A0; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .grid__col--5.theme__colors {
+      width: 50%; } }
   @media (min-width: 1400px) {
     .grid__col--5.theme__colors {
       -webkit-box-flex: 5;
@@ -444,6 +488,10 @@ template {
 
 .grid__col--7.theme__colors {
   background-color: #EC9EA3; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .grid__col--7.theme__colors {
+      width: 70%;
+      margin: auto; } }
   @media (min-width: 1400px) {
     .grid__col--7.theme__colors {
       width: 70%;
@@ -459,6 +507,10 @@ template {
       -ms-flex: 8;
       flex-grow: 8; } }
 
+@media (min-width: 769px) and (max-width: 1399px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row; } }
 @media (min-width: 1400px) {
   .grid__col--12 {
     display: -webkit-box;
@@ -467,6 +519,8 @@ template {
     display: -ms-flexbox;
     display: flex;
     width: 100%; }
+    .grid__col--12 .card {
+      width: 100%; }
 
   .grid__col--6 {
     -webkit-box-flex: 2;
@@ -487,6 +541,9 @@ template {
 
 .img--logo {
   margin: 20px auto; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .img--logo {
+      margin-right: 20px; } }
   @media (min-width: 1400px) {
     .img--logo {
       margin-left: 0; } }
@@ -497,6 +554,10 @@ template {
   max-width: 90%;
   height: auto;
   margin-top: 20px; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .img--frame {
+      width: 80%;
+      margin-right: 70px; } }
 
 @media (min-width: 1400px) {
   .img--avatar {
@@ -504,6 +565,12 @@ template {
 .nav__item {
   text-align: center;
   height: 50px; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .nav__item {
+      margin-left: 20px;
+      margin-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px; } }
   @media (min-width: 1400px) {
     .nav__item {
       margin-left: 20px;
@@ -517,6 +584,9 @@ template {
 a:hover {
   color: #fff; }
 
+@media (min-width: 769px) and (max-width: 1399px) {
+  .nav {
+    display: flex; } }
 @media (min-width: 1400px) {
   .nav {
     display: -webkit-box;
@@ -530,10 +600,16 @@ a:hover {
     margin-right: 20px; } }
 .headline--secondary {
   font-weight: 100; }
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .headline--secondary {
+      margin-top: 0; } }
   @media (min-width: 1400px) {
     .headline--secondary {
       margin-top: 0; } }
 
+@media (min-width: 769px) and (max-width: 1399px) {
+  .card {
+    width: 90%; } }
 .headline--primary {
   padding-left: 30px;
   color: #57E1C1;

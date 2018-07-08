@@ -27,24 +27,58 @@
   transition-duration: 0.4s;
 }
 
+
+
 .btn--default {
   background-color: $btn-default-color;
+
+  @include mq(medium) {
+    width: 85px;
+    margin-left: 40px;
+  }
 }
 
 .btn--success {
   background-color: $btn-success-color;
+
+  @include mq(medium) {
+    width: 85px;
+    margin-left: 40px;
+  }
 }
 
 .btn--error {
   background-color: $btn-error-color;
+
+  @include mq(medium) {
+    width: 85px;
+    margin-left: 40px;
+  }
 }
 
 .btn--warning {
   background-color: $btn-warning-color;
+
+  @include mq(medium) {
+    width: 85px;
+    margin-left: 40px;
+  }
 }
 
 .btn--info {
   background-color: $btn-info-color;
+
+  @include mq(medium) {
+    width: 85px;
+    margin-left: 40px;
+  }
+}
+
+@include mq(medium) {
+  .form button {
+    width: 100%;
+    margin-left: 5px;
+  }
 }
 
 @include mq(large) {

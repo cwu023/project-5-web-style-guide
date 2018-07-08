@@ -14,6 +14,9 @@
 .grid__row {
   margin-bottom: 80px;
 
+  @include mq(medium) {
+    @include flexbox;
+  }
   @include mq(large) {
     @include flexbox;
   }
@@ -31,6 +34,9 @@
 .grid__col--12.theme__colors {
   background-color: $grid-col-12-color;
 
+  @include mq(medium) {
+    @include flexbox;
+  }
   @include mq(large) {
     @include flex-grow($int: 1);
   }
@@ -43,6 +49,10 @@
 .grid__col--4.theme__colors {
   background-color: $grid-col-4-color;
 
+  @include mq(medium) {
+    width: 40%;
+  }
+  
   @include mq(large) {
     @include flex-grow($int: 3);
   }
@@ -55,6 +65,10 @@
 .grid__col--5.theme__colors {
   background-color: $grid-col-5-color;
 
+  @include mq(medium) {
+    width: 50%;
+  }
+
   @include mq(large) {
     @include flex-grow($int: 5);
   }
@@ -62,6 +76,11 @@
 
 .grid__col--7.theme__colors {
   background-color: $grid-col-7-color;
+
+  @include mq(medium) {
+    width: 70%;
+    margin: auto;
+  }
 
   @include mq(large) {
     width: 70%;
@@ -77,10 +96,21 @@
   }
 }
 
+@include mq(medium) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 @include mq(large) {
   .grid__col--12 {
     @include flexbox;
     width: 100%;
+
+    .card {
+      width: 100%;
+    }
   }
 
   .grid__col--6 {
